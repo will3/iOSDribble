@@ -19,3 +19,14 @@ http://www.ios.uplabs.com/posts/grandaddy-purple-strain
 Preview:  
 ![preview](https://raw.githubusercontent.com/will3/iOSDribble/master/RadarChart/preview.png)  
 [/RadarChart](https://github.com/will3/iOSDribble/tree/master/RadarChart)
+
+
+### Launch Icon
+
+Inspiration:
+http://www.ios.uplabs.com/posts/start-launch-screen
+
+Preview:
+
+![preview](https://raw.githubusercontent.com/will3/iOSDribble/master/Start/preview.gif)  
+[/Start](https://github.com/will3/iOSDribble/tree/master/Start)

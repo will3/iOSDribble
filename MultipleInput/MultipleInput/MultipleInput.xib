@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MultipleInput" customModule="MultipleInput" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="530" height="289"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQl-eB-4nh">
+                    <rect key="frame" x="0.0" y="0.0" width="530" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-01-hrJ">
+                    <rect key="frame" x="476" y="66" width="54" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-0k-lJB">
+                    <rect key="frame" x="0.0" y="22" width="530" height="42"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-U7-1lq">
+                            <rect key="frame" x="0.0" y="40" width="530" height="2"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="uvq-aq-2uz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="5hB-Fx-LFJ"/>
+                        <constraint firstAttribute="trailing" secondItem="0dZ-U7-1lq" secondAttribute="trailing" id="Y1e-Om-TgG"/>
+                        <constraint firstItem="0dZ-U7-1lq" firstAttribute="leading" secondItem="xrz-0k-lJB" secondAttribute="leading" id="Ysv-28-GMx"/>
+                        <constraint firstAttribute="bottom" secondItem="0dZ-U7-1lq" secondAttribute="bottom" id="erb-e5-fZW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VHB-01-hrJ" secondAttribute="bottom" id="0A5-Bp-ujv"/>
+                <constraint firstAttribute="trailing" secondItem="ZQl-eB-4nh" secondAttribute="trailing" id="2aT-OO-96a"/>
+                <constraint firstItem="VHB-01-hrJ" firstAttribute="top" secondItem="xrz-0k-lJB" secondAttribute="bottom" constant="2" id="2nB-75-o8z"/>
+                <constraint firstAttribute="trailing" secondItem="xrz-0k-lJB" secondAttribute="trailing" id="55C-Cy-UzT"/>
+                <constraint firstItem="xrz-0k-lJB" firstAttribute="top" secondItem="ZQl-eB-4nh" secondAttribute="bottom" id="7Az-Ez-nsT"/>
+                <constraint firstAttribute="trailing" secondItem="VHB-01-hrJ" secondAttribute="trailing" id="86Z-bm-sLC"/>
+                <constraint firstItem="xrz-0k-lJB" firstAttribute="top" secondItem="ZQl-eB-4nh" secondAttribute="bottom" constant="4" id="EsN-um-aeO"/>
+                <constraint firstItem="xrz-0k-lJB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S0e-UE-ITh"/>
+                <constraint firstItem="ZQl-eB-4nh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="buc-pS-bxS"/>
+                <constraint firstItem="ZQl-eB-4nh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fkh-ZL-ZmL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7Az-Ez-nsT"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="inputContainer" destination="xrz-0k-lJB" id="ETq-qe-o0b"/>
+                <outlet property="placeholderLabel" destination="ZQl-eB-4nh" id="oQj-c3-XPq"/>
+                <outlet property="progressBackgroundView" destination="0dZ-U7-1lq" id="w3J-T3-bxx"/>
+                <outlet property="progressLabel" destination="VHB-01-hrJ" id="0b0-GT-ePY"/>
+            </connections>
+            <point key="canvasLocation" x="297" y="260.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,7 +1,5 @@
 ## iOS Dribble challenge
 
-Implement 30 iOS Dribble designs in 30 days
-
 ### 1 Input 4 All
 
 Inspiration:  
